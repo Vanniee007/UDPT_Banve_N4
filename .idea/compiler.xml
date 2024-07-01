@@ -7,10 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
-        <module name="GoogleLogin" />
+        <module name="PaymentSevice" />
         <module name="ProfileService" />
         <module name="AuthService" />
+        <module name="api-gateway" />
+        <module name="GoogleLogin" />
+        <module name="TicketService" />
+        <module name="EventManagament" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,15 +21,17 @@
       <module name="demo" target="17" />
       <module name="demo.main" target="17" />
       <module name="demo.test" target="17" />
-      <module name="PaymentSevice" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AuthService" options="-parameters" />
       <module name="AuthenticationService" options="-parameters" />
+      <module name="EventManagament" options="-parameters" />
       <module name="GoogleLogin" options="-parameters" />
+      <module name="PaymentSevice" options="-parameters" />
       <module name="ProfileService" options="-parameters" />
+      <module name="TicketService" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>

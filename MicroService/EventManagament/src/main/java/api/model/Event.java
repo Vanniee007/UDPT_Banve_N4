@@ -3,7 +3,9 @@ package api.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Event2")
+import java.time.LocalDateTime;
+
+@Document(collection = "Event")
 public class Event {
 
     @Id
@@ -12,7 +14,8 @@ public class Event {
     private String moTa;
     private String thoiLuong;
     private String diaChi;
-    private int tongSoVe;
+    private LocalDateTime thoiGian;
+    private LocalDateTime ngayTao;
     private String tinhTrang;
     private String maAdSk;
     private String imageData;
@@ -65,12 +68,19 @@ public class Event {
         this.diaChi = diaChi;
     }
 
-    public int getTongSoVe() {
-        return tongSoVe;
+    public LocalDateTime getThoiGian() {
+        return thoiGian;
     }
 
-    public void setTongSoVe(int tongSoVe) {
-        this.tongSoVe = tongSoVe;
+    public void setThoiGian(LocalDateTime thoiGian) {
+        this.thoiGian = thoiGian;
+    }
+    public LocalDateTime getNgayTao() {
+        return ngayTao;
+    }
+
+    public void setNgayTao(LocalDateTime ngayTao) {
+        this.ngayTao = ngayTao;
     }
 
     public String getTinhTrang() {
@@ -90,14 +100,16 @@ public class Event {
     }
 
 
-    public Event(String maSk, String ten, String moTa, String thoiLuong, String diaChi, int tongSoVe, String tinhTrang, String maAdSk,String imageData) {
+    public Event(String maSk, String ten, String moTa, String thoiLuong, String diaChi, LocalDateTime thoiGian, LocalDateTime ngayTao,
+            String tinhTrang, String maAdSk,String imageData) {
         super();
         this.maSk = maSk;
         this.ten = ten;
         this.moTa = moTa;
         this.thoiLuong = thoiLuong;
         this.diaChi = diaChi;
-        this.tongSoVe = tongSoVe;
+        this.thoiGian = thoiGian;
+        this.ngayTao = ngayTao;
         this.tinhTrang = tinhTrang;
         this.maAdSk = maAdSk;
         this.imageData = imageData;

@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import api.model.Event;
 import api.repository.Eventrepository;
@@ -29,8 +28,8 @@ public class EventController {
 
         try {
             Event _sukien = repo.save(new Event(
-                    sukien.getMaSk(), sukien.getTen(), sukien.getMoTa(), sukien.getThoiLuong(), 
-                    sukien.getDiaChi(), sukien.getTongSoVe(), sukien.getTinhTrang(), sukien.getMaAdSk(), 
+                    sukien.getMaSk(), sukien.getTen(), sukien.getMoTa(), sukien.getThoiLuong(),
+                    sukien.getDiaChi(), sukien.getThoiGian(), sukien.getNgayTao(), sukien.getTinhTrang(), sukien.getMaAdSk(),
                     sukien.getImageData()
             ));
 
@@ -79,7 +78,6 @@ public class EventController {
             Event _event = eventData.get();
             _event.setMoTa(event.getMoTa());
             _event.setThoiLuong(event.getThoiLuong());
-            _event.setTongSoVe(event.getTongSoVe());
             _event.setTinhTrang(event.getTinhTrang());
 
             return new ResponseEntity<>(repo.save(_event), HttpStatus.OK);

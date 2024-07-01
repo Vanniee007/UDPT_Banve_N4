@@ -5,6 +5,9 @@
     <file url="file://$PROJECT_DIR$/MicroService/AuthService/demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MicroService/AuthService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MicroService/AuthenticationService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService/EventManagament/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService/PaymentSevice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MicroService/TicketService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ProfileService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
   </component>

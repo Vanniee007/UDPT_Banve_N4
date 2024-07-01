@@ -1,0 +1,136 @@
+/* public/css/app.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-icons i {
+    margin-right: 10px;
+}
+
+/* Kích thước chữ nhỏ hơn cho số điện thoại và email */
+.phone-email {
+    font-size: 0.8rem; /* Tương đương với 14px */
+}
+
+/* Màu đen cho icon mạng xã hội */
+.social-icons a {
+    color: black;
+    font-size: 0.8rem; /* Tăng kích thước icon nếu cần */
+}
+.social-icons a:hover {
+    color: #666;
+}
+
+/* Kích thước logo và tỉ lệ 1:1 */
+.logo img {
+    height: 75px; /* Chiều cao bằng 1.5 lần thanh tìm kiếm */
+    width: auto; /* Duy trì tỉ lệ ảnh */
+    object-fit: cover; /* Giữ tỉ lệ ảnh */
+}
+/* Điều chỉnh kích thước của phần tìm kiếm và icon search */
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%; /* Phủ hết phần md của nó */
+    border: none;
+    border-bottom: 1px solid #ccc; /* Đường viền dưới */
+    outline: none;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #000; /* Màu đường viền khi focus */
+}
+
+.form-inline .btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.form-inline .btn i {
+    color: #000; /* Màu của icon search */
+    transition: color 0.3s;
+}
+
+.form-inline .btn:hover i {
+    color: #666; /* Màu của icon search khi hover */
+}
+
+.form-inline .btn:hover {
+    background-color: transparent; /* Nền trong suốt khi hover */
+}
+
+/* Điều chỉnh navbar */
+.navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+    color: #000;
+}
+
+
+/* Style cho phần tìm kiếm */
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 75%;
+}
+
+.form-inline .btn {
+    padding: 0.375rem 0.75rem;
+}
+
+/* Style cho các liên kết đăng nhập và đăng ký */
+.auth-links .nav-link {
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.auth-links .nav-link:hover {
+    background-color: #f0f0f0;
+    color: #666;
+}
+.auth-links {
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+
+.auth-links .nav-link + .nav-link {
+    margin-left: -15px; /* Khoảng cách giữa các liên kết */
+}
+
+.custom-content {
+    min-height: 1000px; /* Độ cao tối thiểu là 500px */
+    /* background-color: #ffffcc; Màu nền là màu vàng */
+    padding: 20px; /* Phần padding để tạo khoảng cách với các thành phần khác */
+}
+
+
+.footer-wrapper {
+    background-color: #16222A;
+    color: white;
+    width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+}
+
+.footer-content {
+    max-width: 1140px; /* Giới hạn chiều rộng nội dung footer để bằng với chiều rộng header/container */
+    margin: 0 auto; /* Căn giữa nội dung */
+}
+
+.footer .text-reset {
+    color: white;
+}
+
+.footer .text-reset:hover {
+    color: #cccccc; /* Màu khi hover */
+}

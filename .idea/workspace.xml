@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59de9f00-b4c7-4fac-bcab-9cbe85ad39fd" name="Changes" comment="chạy ổn các service APIGateway, AuthenticationService, ProfileService" />
+    <list default="true" id="59de9f00-b4c7-4fac-bcab-9cbe85ad39fd" name="Changes" comment="chạy ổn các service APIGateway, AuthenticationService, ProfileService">
+      <change afterPath="$PROJECT_DIR$/MicroService/EventManagament/src/main/java/api/controller/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroService/EventManagament/src/main/java/api/model/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroService/EventManagament/src/main/java/api/repository/TicketRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_6_2024_0_17_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_6_2024_0_17__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService/EventManagament/src/main/java/api/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroService/EventManagament/src/main/java/api/controller/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService/EventManagament/src/main/java/api/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroService/EventManagament/src/main/java/api/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService/EventManagament/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MicroService/EventManagament/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroService/TicketService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MicroService/TicketService/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +58,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -92,13 +110,15 @@
     "Spring Boot.AuthenticationService.executor": "Run",
     "Spring Boot.AuthenticationServiceApplication.executor": "Run",
     "Spring Boot.Demo1Application.executor": "Run",
+    "Spring Boot.EventManagamentApplication.executor": "Run",
     "Spring Boot.ProfileServiceApplication.executor": "Run",
     "Spring Boot.RegistryServer.executor": "Run",
     "Spring Boot.RegistryServerApplication.executor": "Run",
+    "Spring Boot.TicketServiceApplication.executor": "Run",
     "git-widget-placeholder": "feature/vohuuanhtuan",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GitHub/UDPT_Banve_N4/MicroService/ProfileService/src/main/java/com/udpt_banve/profileservice/config",
+    "last_opened_file_path": "D:/hoc/HK4_2/UDPT/pj_v2/UDPT_Banve_N4/MicroService/ProfileService",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,11 +147,11 @@
       <recent name="D:\GitHub\UDPT_Banve_N4\MicroService\AuthService\src\main\java\com\udpt_banve\authservice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="api.repository" />
+      <recent name="api.model" />
+      <recent name="api.controller" />
       <recent name="com.udpt_banve.profileservice.dto.response" />
       <recent name="com.udpt_banve.profileservice.dto.request" />
-      <recent name="com.udpt_banve.authservice.dto.request" />
-      <recent name="com.udpt_banve.profileservice.config" />
-      <recent name="com.udpt_banve.profileservice.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -162,6 +182,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EventManagamentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EventManagament" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="api.EventManagamentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GoogleLogin" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="GoogleLogin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.Demo1Application" />
@@ -175,6 +202,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentSeviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="PaymentSevice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="api.PaymentSeviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProfileServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ProfileService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.udpt_banve.profileservice.ProfileServiceApplication" />
@@ -182,7 +216,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicketServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="TicketService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="api.TicketServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Spring Boot.EventManagamentApplication" />
+      <item itemvalue="Spring Boot.PaymentSeviceApplication" />
+      <item itemvalue="Spring Boot.TicketServiceApplication" />
       <item itemvalue="Spring Boot.Api Gateway" />
       <item itemvalue="Spring Boot.Authentication Service" />
       <item itemvalue="Spring Boot.ProfileServiceApplication" />
@@ -197,8 +241,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -238,6 +282,8 @@
       <workItem from="1719032116620" duration="11270000" />
       <workItem from="1719098893950" duration="24506000" />
       <workItem from="1719136233189" duration="765000" />
+      <workItem from="1719809544632" duration="66000" />
+      <workItem from="1719809661287" duration="9061000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />

@@ -12,15 +12,13 @@
         <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/AuthService/pom.xml" />
         <option value="$PROJECT_DIR$/MicroService/AuthService/pom.xml" />
-        <option value="$PROJECT_DIR$/ProfileService/pom.xml" />
-        <option value="$PROJECT_DIR$/MicroService/ProfileService/pom.xml" />
-        <option value="$PROJECT_DIR$/MicroService/AuthService/demo/pom.xml" />
-        <option value="$PROJECT_DIR$/demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService/EventManagament/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService/TicketService/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroService/PaymentSevice/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/MicroService/AuthService/demo/pom.xml" />
         <option value="$PROJECT_DIR$/MicroService/RegistryServer/pom.xml" />
       </set>
     </option>
